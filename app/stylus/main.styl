@@ -1,0 +1,349 @@
+@import 'nib'
+global-reset()
+
+@import "_fonts.styl"
+@import "_vars.styl"
+
+@import "_settings.styl"
+
+@import "_function.styl"
+@import "font-awesome-stylus"
+
+@import "_libs.styl"
+
+.header-top
+  display flex
+  justify-content space-between
+  padding 30px 0
+  #nav-test
+    display flex
+    justify-content center
+    align-items center
+    #nav-container
+      position: relative
+      box-sizing: border-box
+      ul
+        display: flex
+        padding-left: 30px
+        padding-right: 30px
+        margin: 0
+        li
+          display: flex
+          align-items: center
+          min-height: 48px
+          margin-left: 60px
+          cursor: pointer
+          user-select: none
+          &:first-child
+            margin-left: 0
+          a
+            color #fff
+            cursor pointer
+            font-family RalewayBold
+            font-size 12px
+      #line
+        position: absolute
+        bottom: 0
+        height: 3px
+        background: #fff
+        transition: all 150ms ease-in-out
+
+.header-content
+  display flex
+  flex-direction column
+  align-items center
+  .h1
+    margin-top 160px
+    text-align center
+  .button
+    margin 90px 0 170px 0
+    button RalewayRegular, 17px, bottomblue, #fff, 238px, 53px
+    border none
+
+.site-header-footer
+  background-color #9577a8
+  .header-footer
+    color #fff
+    display flex
+    flex-direction column
+    align-items center
+    .h3
+      font-size 25px
+      font-family RalewayLight
+      margin-top 60px
+      letter-spacing 6px
+    p
+      font-size 17px
+      font-family RalewaySemiBold
+      margin-top 30px
+    .button
+      button RobotoLight, 18px, #9577a8, #fff, 238px, 53px
+      border 1px solid #fff
+      margin 50px 0 37px 0
+      .fa
+        margin-right 10px
+
+.s-wedo
+  background url('../img/backwedo.png') no-repeat right top
+  padding 100px 0 62px 0
+  position relative
+  min-height 350px
+  &-content
+    //min-height 552px
+    position relative
+    &-text
+      width 340px
+      color #000
+      .shedow-text
+        font-size: 65px
+        font-family SegoeUIBold
+        color lighten(#000, 92%)
+        position absolute
+        width 100%
+        word-wrap normal
+        line-height 1
+        top -43px
+        left -128px
+        z-index -1
+        opacity 0.5
+      .h2
+        font-size 37px
+        font-family RobotoBold
+        span
+          font-family RalewayLight
+          color lighten(#000, 55%)
+          text-transform none
+      &_bold
+        font-size 18px
+        font-family calibri
+        line-height 1.2
+        margin 50px 0 20px 0
+      &_normal
+        font-size 16px
+        font-family calibri
+        color lighten(#000, 35%)
+        line-height 1.3
+      .button
+        button RalewayMedium, 17px, #fff, #000, 182px, 45px
+        border 1px solid #70d6f8
+        margin 50px 0 37px 0
+
+.s-greenicons
+  background-color #45b681
+  padding 68px 0
+  &-content
+    display flex
+    justify-content space-between
+    &-item
+      display flex
+      flex-direction column
+      align-items center
+      margin 0 10px
+      padding 0 10px
+      border-radius 4em
+      flex-grow 1
+      flex-basis 150px
+      &:nth-child(2)
+        flex-grow 2
+      &:nth-child(3)
+        flex-grow 3
+      &:hover
+        box-shadow 0px 0px 0px 2px #fff
+        //outline 3px dashed #fff
+
+      &_icon
+        margin 60px 0 40px 0
+        .icon-Tilda_Icons_37_Finance-technologies_crypto-etherium:before
+          content "\e900"
+          icomoon_function()
+        .icon-Tilda_Icons_37_Finance-technologies_moneybag:before
+          content "\e901"
+          icomoon_function()
+        .icon-Tilda_Icons_37_Finance-technologies_planing:before
+          content "\e902"
+          icomoon_function()
+        .icon-Tilda_Icons_37_Finance-technologies_webmoney:before
+          content "\e903"
+          icomoon_function()
+      &_text
+        color #fff
+        font-size 15px
+        font-family LuganskiyV
+        text-align center
+        line-height 1.2
+        margin-bottom 60px
+
+.s-join
+  &-top
+    background-color: #fff
+    height 170px
+  &-center
+    background-color: #f3f3f3
+    height 330px
+  &-botton
+    background-color: #6086b4
+    height 330px
+    padding-bottom  70px
+    &-content
+      color #fff
+      position relative
+      display flex
+      flex-direction column
+      align-items center
+      &-img
+        img
+          position absolute
+          top -350px
+          left 50%
+          margin-left -282px
+      &-caption
+        .h3
+          font-family MyriadProRegular
+          font-size 30px
+          letter-spacing 6px
+          margin 170px 0 70px 0
+      &-info
+        width: 100%
+        display flex
+        justify-content space-between
+        &_item
+          display flex
+          flex-direction column
+          align-items center
+          margin 0 30px
+          .h4
+            font-family RobotoBold
+            font-size 18px
+          .p
+            font-family RalewayLight
+            font-size 16px
+
+
+//----------------------Комментарии ------------------------
+.s-comments
+  background-color: #fff
+  color #000
+  &-content
+    position relative
+    display flex
+    flex-direction column
+    align-items center
+    .shedow-text
+      font-size: 65px
+      font-family SegoeUIBold
+      color lighten(#000, 92%)
+      position absolute
+      width 100%
+      word-wrap normal
+      line-height 1
+      top 27px
+      left 40px
+      z-index 0
+      opacity 0.5
+    .h2
+      font-size 30px
+      font-family RobotoBold
+      margin 70px 0 40px 0
+      z-index 5
+      span
+        font-family RalewayLight
+        color lighten(#000, 55%)
+        text-transform none
+
+.carousel-comments
+  text-align: center
+  .owl-nav
+    position: absolute
+    top: 40px
+    width: 100%
+    > button
+      width: 64px
+      height: 64px
+      background-color: #ffffff
+      color: #222
+      position: absolute
+      text-align: center
+      line-height: 54px
+      .fa
+        font-size: 30px
+        color #9577a7
+      &.owl-prev
+        left: 0
+      &.owl-next
+        right: 0
+
+  .owl-item
+    display flex
+    flex-direction column
+    align-items center
+    .comments
+      width: 540px
+      &-text
+        background-color #f7f7f7
+        font-family sitka
+        text-align left
+        color #2a2a2a
+        font-size 18px
+        line-height 1.3
+        padding 25px 35px
+        &-quote
+          font-size: 14px
+          &_left
+            text-align left
+          &_right
+            text-align right
+      &-author
+        margin 60px 0
+        display flex
+        justify-content: center
+        img
+          width: 50px
+          margin-right 10px
+        p
+          font-family RobotoLight
+          font-size 18px
+          line-height: 1
+          display flex
+          align-items center
+          justify-content center
+
+.s-footer
+  background-color #212934
+  color #fff
+  &-content
+    display flex
+    justify-content space-between
+    padding 50px 0 18px 0
+    &-item
+      margin 0 20px
+      img
+        width: 100px
+
+.second-item
+  display flex
+  flex-direction column
+  align-items center
+  justify-content space-between
+  &_support
+    font-family RalewayMedium
+    font-size 10px
+    width: 280px
+    display flex
+    justify-content space-between
+  &_info
+    font-family RalewayMedium
+    font-size 13px
+    line-height 1.2
+
+
+.last-item
+  display flex
+  flex-direction: column
+  &_mail
+    margin-bottom 10px
+  &_tel
+    margin-bottom 22px
+  &_abount
+    font-size 11px
+    color rgba(#fff, .5)
+

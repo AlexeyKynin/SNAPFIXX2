@@ -1,0 +1,25 @@
+{
+  "name": "maxima_styles",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "AlexeyKynin <36325198+AlexeyKynin@users.noreply.github.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "font-awesome": "^5.0.8"
+  },
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  }
+}
